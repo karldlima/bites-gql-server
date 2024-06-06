@@ -15,6 +15,7 @@ You can test the server using the in-built GraphQL Apollo interface, Apollo intr
 
 ## Project Structure
 
+```
 .
 ├── graphql
 │ ├── index.js # Entry point of the server, handler
@@ -22,3 +23,4 @@ You can test the server using the in-built GraphQL Apollo interface, Apollo intr
 │ └── resolvers.js # Resolver functions for the GraphQL schema
 ├── package.json # Project metadata and dependencies
 └── README.md # This README file
+```
