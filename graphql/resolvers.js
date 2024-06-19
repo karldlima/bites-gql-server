@@ -1,295 +1,32 @@
-// TODO: store in db
+import db from "../pgAdaptor.js";
+
 export const resolvers = {
   Query: {
-    food: () => [
-      {
-        id: 1,
-        type: "donut",
-        name: "Cake",
-        topping: "Regular Glazed",
-      },
-      {
-        id: 1,
-        type: "donut",
-        name: "Cake",
-        topping: "Regular Sugar",
-      },
-      {
-        id: 1,
-        type: "donut",
-        name: "Cake",
-        topping: "Regular Powdered Sugar",
-      },
-      {
-        id: 1,
-        type: "donut",
-        name: "Cake",
-        topping: "Regular Chocolate with Sprinkles",
-      },
-      {
-        id: 1,
-        type: "donut",
-        name: "Cake",
-        topping: "Regular Chocolate",
-      },
-      {
-        id: 1,
-        type: "donut",
-        name: "Cake",
-        topping: "Regular Maple",
-      },
-      {
-        id: 1,
-        type: "donut",
-        name: "Cake",
-        topping: "Chocolate None",
-      },
-      {
-        id: 1,
-        type: "donut",
-        name: "Cake",
-        topping: "Chocolate Glazed",
-      },
-      {
-        id: 1,
-        type: "donut",
-        name: "Cake",
-        topping: "Chocolate Sugar",
-      },
-      {
-        id: 1,
-        type: "donut",
-        name: "Cake",
-        topping: "Chocolate Powdered Sugar",
-      },
-      {
-        id: 1,
-        type: "donut",
-        name: "Cake",
-        topping: "Chocolate Chocolate with Sprinkles",
-      },
-      {
-        id: 1,
-        type: "donut",
-        name: "Cake",
-        topping: "Chocolate Chocolate",
-      },
-      {
-        id: 1,
-        type: "donut",
-        name: "Cake",
-        topping: "Chocolate Maple",
-      },
-      {
-        id: 1,
-        type: "donut",
-        name: "Cake",
-        topping: "Blueberry None",
-      },
-      {
-        id: 1,
-        type: "donut",
-        name: "Cake",
-        topping: "Blueberry Glazed",
-      },
-      {
-        id: 1,
-        type: "donut",
-        name: "Cake",
-        topping: "Blueberry Sugar",
-      },
-      {
-        id: 1,
-        type: "donut",
-        name: "Cake",
-        topping: "Blueberry Powdered Sugar",
-      },
-      {
-        id: 1,
-        type: "donut",
-        name: "Cake",
-        topping: "Blueberry Chocolate with Sprinkles",
-      },
-      {
-        id: 1,
-        type: "donut",
-        name: "Cake",
-        topping: "Blueberry Chocolate",
-      },
-      {
-        id: 1,
-        type: "donut",
-        name: "Cake",
-        topping: "Blueberry Maple",
-      },
-      {
-        id: 1,
-        type: "donut",
-        name: "Cake",
-        topping: "Devil's Food None",
-      },
-      {
-        id: 1,
-        type: "donut",
-        name: "Cake",
-        topping: "Devil's Food Glazed",
-      },
-      {
-        id: 1,
-        type: "donut",
-        name: "Cake",
-        topping: "Devil's Food Sugar",
-      },
-      {
-        id: 1,
-        type: "donut",
-        name: "Cake",
-        topping: "Devil's Food Powdered Sugar",
-      },
-      {
-        id: 1,
-        type: "donut",
-        name: "Cake",
-        topping: "Devil's Food Chocolate with Sprinkles",
-      },
-      {
-        id: 1,
-        type: "donut",
-        name: "Cake",
-        topping: "Devil's Food Chocolate",
-      },
-      {
-        id: 1,
-        type: "donut",
-        name: "Cake",
-        topping: "Devil's Food Maple",
-      },
-      {
-        id: 2,
-        type: "donut",
-        name: "Raised",
-        topping: "Regular None",
-      },
-      {
-        id: 2,
-        type: "donut",
-        name: "Raised",
-        topping: "Regular Glazed",
-      },
-      {
-        id: 2,
-        type: "donut",
-        name: "Raised",
-        topping: "Regular Sugar",
-      },
-      {
-        id: 2,
-        type: "donut",
-        name: "Raised",
-        topping: "Regular Chocolate",
-      },
-      {
-        id: 2,
-        type: "donut",
-        name: "Raised",
-        topping: "Regular Maple",
-      },
-      {
-        id: 3,
-        type: "donut",
-        name: "Old Fashioned",
-        topping: "Regular None",
-      },
-      {
-        id: 3,
-        type: "donut",
-        name: "Old Fashioned",
-        topping: "Regular Glazed",
-      },
-      {
-        id: 3,
-        type: "donut",
-        name: "Old Fashioned",
-        topping: "Regular Chocolate",
-      },
-      {
-        id: 3,
-        type: "donut",
-        name: "Old Fashioned",
-        topping: "Regular Maple",
-      },
-      {
-        id: 3,
-        type: "donut",
-        name: "Old Fashioned",
-        topping: "Chocolate None",
-      },
-      {
-        id: 3,
-        type: "donut",
-        name: "Old Fashioned",
-        topping: "Chocolate Glazed",
-      },
-      {
-        id: 3,
-        type: "donut",
-        name: "Old Fashioned",
-        topping: "Chocolate Chocolate",
-      },
-      {
-        id: 3,
-        type: "donut",
-        name: "Old Fashioned",
-        topping: "Chocolate Maple",
-      },
-      {
-        id: 4,
-        type: "bar",
-        name: "Bar",
-        topping: "Regular Chocolate",
-      },
-      {
-        id: 4,
-        type: "bar",
-        name: "Bar",
-        topping: "Regular Maple",
-      },
-      {
-        id: 5,
-        type: "twist",
-        name: "Twist",
-        topping: "Regular Glazed",
-      },
-      {
-        id: 5,
-        type: "twist",
-        name: "Twist",
-        topping: "Regular Sugar",
-      },
-      {
-        id: 6,
-        type: "filled",
-        name: "Filled",
-        topping: "Regular Glazed",
-      },
-      {
-        id: 6,
-        type: "filled",
-        name: "Filled",
-        topping: "Regular Powdered Sugar",
-      },
-      {
-        id: 6,
-        type: "filled",
-        name: "Filled",
-        topping: "Regular Chocolate",
-      },
-      {
-        id: 6,
-        type: "filled",
-        name: "Filled",
-        topping: "Regular Maple",
-      },
-    ],
+    food: async () => {
+      return db
+        .query(`SELECT * FROM food`)
+        .then((res) => res)
+        .catch((err) => {
+          console.log("err: ", err);
+          return err;
+        });
+    },
+  },
+  Mutation: {
+    addFood: async (_, args) => {
+      const query = `INSERT INTO food(id, type, name, topping, added)
+        VALUES ($1, $2, $3, $4, $5) RETURNING name`;
+      const values = [args.id, args.type, args.name, args.topping, new Date()];
+
+      return db
+        .one(query, values)
+        .then((res) => {
+          return res.name;
+        })
+        .catch((err) => {
+          console.log("err: ", err);
+          return err;
+        });
+    },
   },
 };
