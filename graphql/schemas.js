@@ -13,6 +13,6 @@ export const typeDefs = buildSchema(`
     food: [Food]
   }
   type Mutation {
-    addFood(id: Int!, type: String!, name: String!, topping: String!, added: String!): String
+    addFood(id: Int!, type: String!, name: String!, topping: String!): String
   }
 `);
